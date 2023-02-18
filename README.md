@@ -90,7 +90,7 @@ o11y means observability!
 # FAQs
 
 1. I want to add a new addition to the Gloassry, how should I do it?
-- Please send a pull request to this repository.
+- Please send a pull request to this [GitHub repository](https://github.com/prathamesh-sonpatki/o11y-wiki).
 
 2. What is considered as part of Observability Glossary?
 - Any term or concept related to Observability.

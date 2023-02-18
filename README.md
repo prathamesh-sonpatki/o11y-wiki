@@ -10,6 +10,9 @@ Below document contains all the terms sorted alphabetically with their definitio
 ### APM
 APM or Application Performance monitoring is a software tool which measures and tracks application's performance. It helps understand answers related to how the application is performing in real time.
 
+### Alertmanager
+The [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) is a component used with Prometheus that handles alerts sent by client applications such as the Prometheus server. It takes care of deduplicating, grouping, and routing them to the correct receiver integration such as email, PagerDuty, or OpsGenie. It also takes care of silencing and inhibition of alerts.
+
 ## B
 
 
@@ -57,6 +60,8 @@ o11y means observability!
 
 ## P
 
+### Prometheus
+[Prometheus](https://prometheus.io/) is an open-source systems monitoring and alerting toolkit originally built at SoundCloud.
 
 ## Q
 

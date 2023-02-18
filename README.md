@@ -5,10 +5,10 @@ from the desire to understand and document terms and concepts related to Observa
 
 Below document contains all the terms sorted alphabetically with their definitions.
 
-# Glossary
-
 ## A
 
+### APM
+APM or Application Performance monitoring is a software tool which measures and tracks application's performance. It helps understand answers related to how the application is performing in real time.
 
 ## B
 
@@ -86,3 +86,11 @@ o11y means observability!
 
 
 ## Z
+
+# FAQs
+
+1. I want to add a new addition to the Gloassry, how should I do it?
+- Please send a pull request to this repository.
+
+2. What is considered as part of Observability Glossary?
+- Any term or concept related to Observability.

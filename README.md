@@ -29,6 +29,11 @@ OpsGenie. It also takes care of silencing and inhibition of alerts.
 
 ## D
 
+### Datalake
+
+Datalake is a single storage that stores different types of monitoring data such as logs, metrics, traces, events.
+The single storage allows for far more corelation than different data being stored at different places.
+
 ## E
 
 ## F
@@ -66,9 +71,18 @@ alerting toolkit originally built at SoundCloud.
 
 ## R
 
+### Reliability
+
+Reliability is hard to define but it can be termed as the quality of software system to be trustworthy
+and predictable in its performance and user experience.
+
 ## S
 
 ## T
+
+### Telemetry
+
+Telemetry is collecting the monitoring data such as logs, metrics, and traces from different software systems.
 
 ## U
 

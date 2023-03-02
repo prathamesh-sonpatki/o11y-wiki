@@ -109,8 +109,8 @@ Telemetry is collecting the monitoring data such as logs, metrics, and traces fr
 
 ---
 
-# Sponsorship
+# Thanks
 
-This glossary is sponsored and maintained by [Last9](https://last9.io).
+This glossary is sponsored by [Last9](https://last9.io).
 
-<img src="https://last9.github.io/assets/email-logo-green.png" alt="" loading="lazy" height="40px" />
+<a href="https://last9.io"><img src="https://last9.github.io/assets/email-logo-green.png" alt="" loading="lazy" height="40px" /></a>

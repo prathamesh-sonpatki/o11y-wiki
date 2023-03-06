@@ -12,7 +12,7 @@ definitions.
 ### APM
 
 APM or Application Performance monitoring is a software tool which measures and
-tracks application's performance. It helps understand answers related to how the
+tracks application’s performance. It helps understand answers related to how the
 application is performing in real time.
 
 ### Alertmanager
@@ -31,8 +31,9 @@ OpsGenie. It also takes care of silencing and inhibition of alerts.
 
 ### Datalake
 
-Datalake is a single storage that stores different types of monitoring data such as logs, metrics, traces, events.
-The single storage allows for far more corelation than different data being stored at different places.
+Datalake is a single storage that stores different types of monitoring data such
+as logs, metrics, traces, events. The single storage allows for far more
+corelation than different data being stored at different places.
 
 ## E
 
@@ -58,7 +59,11 @@ The single storage allows for far more corelation than different data being stor
 
 ### o11y
 
-o11y means observability!
+o11y stands for observability!
+
+The “11” in the middle stems from software engineering conventions that shorten
+long words by substituting middle letters with the number of middle letters
+instead. Like, a11y stands for accessibility.
 
 ## P
 
@@ -73,8 +78,8 @@ alerting toolkit originally built at SoundCloud.
 
 ### Reliability
 
-Reliability is hard to define but it can be termed as the quality of software system to be trustworthy
-and predictable in its performance and user experience.
+Reliability is hard to define but it can be termed as the quality of software
+system to be trustworthy and predictable in its performance and user experience.
 
 ## S
 
@@ -82,7 +87,14 @@ and predictable in its performance and user experience.
 
 ### Telemetry
 
-Telemetry is collecting the monitoring data such as logs, metrics, and traces from different software systems.
+Telemetry is collecting the monitoring data such as logs, metrics, and traces
+from different software systems.
+
+### Time Series
+
+Time series is a collection of data points indexed in time order. By storing
+data against successive equally spaced points in time, organizations can
+understand the underlying causes of trends or systemic patters over time.
 
 ## U
 

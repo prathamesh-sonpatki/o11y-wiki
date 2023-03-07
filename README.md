@@ -1,6 +1,8 @@
-# o11y-wiki
+![o11y-wiki](assets/logo.svg "The Observability Wiki")
 
-Glossary of all terms related to Observability, starting from A to Z! The
+# o11y.wiki
+
+A glossary of all terms related to Observability, starting from A to Z! The
 inspiration of this project started from the desire to understand and document
 terms and concepts related to Observability at one single place.
 
@@ -94,7 +96,7 @@ from different software systems.
 
 Time series is a collection of data points indexed in time order. By storing
 data against successive equally spaced points in time, organizations can
-understand the underlying causes of trends or systemic patters over time.
+understand the underlying causes of trends or systemic patterns over time.
 
 ## U
 

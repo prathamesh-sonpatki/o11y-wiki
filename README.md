@@ -1,6 +1,8 @@
-# o11y-wiki
+![o11y-wiki](assets/logo.svg "The Observability Wiki")
 
-Glossary of all terms related to Observability, starting from A to Z! The
+# o11y.wiki
+
+A glossary of all terms related to Observability, starting from A to Z! The
 inspiration of this project started from the desire to understand and document
 terms and concepts related to Observability at one single place.
 

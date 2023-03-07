@@ -96,7 +96,7 @@ from different software systems.
 
 Time series is a collection of data points indexed in time order. By storing
 data against successive equally spaced points in time, organizations can
-understand the underlying causes of trends or systemic patters over time.
+understand the underlying causes of trends or systemic patterns over time.
 
 ## U
 

@@ -1,4 +1,4 @@
-![o11y-wiki](assets/logo.svg "The Observability Wiki")
+<img src="/assets/logo.svg" alt="o11y.wiki" title="The Observability Wiki" height="80" width="68" />
 
 # o11y.wiki
 

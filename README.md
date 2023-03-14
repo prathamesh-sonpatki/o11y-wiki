@@ -29,6 +29,12 @@ OpsGenie. It also takes care of silencing and inhibition of alerts.
 
 ## C
 
+### Counter
+
+As the name says, counters are used to monitor how frequently an event occurs within a program.
+They help monitor metrics that increase monotonically and are exposed as time series.
+For example, total requests to an API endpoint is a counter metric, it keeps increasing over time.
+
 ## D
 
 ### Datalake
@@ -43,7 +49,20 @@ corelation than different data being stored at different places.
 
 ## G
 
+### Gauge
+
+Gauges periodically measure a metric or take a snapshot at a specific moment.
+A gauge's value is not ever-increasing; it can go up or down over time.
+An example of a gauge metric is CPU percentage, which will change over time either increasing
+or decreasing.
+
 ## H
+
+### Histogram
+
+In statistics, a histogram is a graphical representation of the distribution of data.
+In the context of Observability, histograms are type of metrics that represent distribution
+of data in specific buckets. Latency can be good example of a histogram metric.
 
 ## I
 
@@ -69,6 +88,11 @@ instead. Like, a11y stands for accessibility.
 
 ## P
 
+### Playbook
+
+Playbooks are a set of instructions about how to respond to an alert. They include
+debugging suggestions and possible actions to take to mitigate the alert.
+
 ### Prometheus
 
 [Prometheus](https://prometheus.io/) is an open-source systems monitoring and
@@ -77,6 +101,15 @@ alerting toolkit originally built at SoundCloud.
 ## Q
 
 ## R
+
+### RED
+
+RED stands for Rate, Error, and Duration the three key metrics that can help
+monitor any service.
+
+- Rate - The number of requests the service is handling
+- Error - The number of failed requests
+- Duration - The amount of time each request takes
 
 ### Reliability
 
@@ -99,6 +132,17 @@ data against successive equally spaced points in time, organizations can
 understand the underlying causes of trends or systemic patterns over time.
 
 ## U
+
+### USE
+
+USE stands for Utilization Saturation and Errors.
+
+- Utilization: the average time the resource was busy servicing work
+- Saturation: the degree to which the resource has extra work which it can't service, often queued
+- Errors: the count of error events
+
+Check https://www.brendangregg.com/usemethod.html for more details.
+
 
 ## V
 

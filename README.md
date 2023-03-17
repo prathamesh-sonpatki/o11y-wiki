@@ -1,5 +1,7 @@
 <img src="/assets/logo.svg" alt="o11y.wiki" title="The Observability Wiki" height="80" width="68" />
 
+[![Open Source Helpers](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki/badges/users.svg)](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki)
+
 # o11y.wiki
 
 A glossary of all terms related to Observability, starting from A to Z! The

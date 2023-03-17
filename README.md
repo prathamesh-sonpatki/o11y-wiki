@@ -76,7 +76,7 @@ Downsampling is the process of reducing the amount of data points in a time seri
 
 ### Event
 
-An event is a significant occurrence within a system that may require attention. Events can be used to trigger alerts or notify operators of potential issues.
+Events are hard to define because everything is an event, but let's give it a try 😉. An event is primarily a change event that can mean a pod restart, deployment, or configuration flag change. Events are important because they affect the system's state externally and can help correlate incidents with metrics, traces, and logs.
 
 ## F
 
@@ -105,7 +105,7 @@ of data in specific buckets. Latency can be good example of a histogram metric.
 
 ### Incident
 
-An incident refers to an unexpected event that causes a system or service to fail or degrade. Examples of incidents can include server crashes, network outages, data center failures, or security breaches.
+An incident is an unexpected event that causes a system or service to fail or degrade. Examples of incidents can include service degradation, downtimes, server crashes, network outages, data center failures, or security breaches.
 
 ## J
 
@@ -117,27 +117,27 @@ Kubernetes is a popular open-source platform for managing containerized workload
 
 ### KPIs
 
-KPIs (Key Performance Indicator) are specific metrics used to track progress towards a specific goal or objective. In the context of SRE, KPIs can be used to measure the performance and reliability of a system.
+KPIs (Key Performance Indicators) track progress toward a specific goal or objective. In the context of o11y, KPIs can be used to measure the performance and reliability of a system, such as response times, failure rates, or peak load.
 
 ## L
 
 ### Log
 
-Logs are an record of activities performed by a system or service over a set period of time. Logs help SRE teams to track behaviours of a system. 
+Logs record activities a system, service, or tool performs over a set time. They are easy to adopt but run into standardization challenges because different tools and languages can have different logging patterns. Logs can grow quickly but are extremely important for debugging a problem once identified.
 
 ## M
 
 ### Metrics
 
-Metrics are quantifiable measurement about the health of a system. They serve as KPI(Key Performance Indicators) about the health of a system or service, Metrics should be easy to understand and makes SRE teams more effective to track performance of their systems.
+Metrics are quantifiable measurements of the health of a system. They are the fastest and cheapest way to understand the health of the system. They are aggregated data essentially giving a bird's eye view of the system performance. An example of a metric is the throughput of an API or latency.
 
 ### Metric Life Cycle Management
 
-Metric Life Cycle Management is the process of defining, collecting, analyzing, and acting on metrics. It's important to manage the metric life cycle to ensure that metrics are useful and provide insights into the system.
+Metric Life Cycle Management defines, collects, analyzes, and acts on metrics. This essentially involves creating a pipeline of metrics that moves from ingestion, storage, query, and alerting stages. You can drop unused data, perform streaming aggregates, and provide control over how and who can query specific data and define alerting.
 
 ### m3DB
 
-[m3DB](https://m3db.io/) is an open-source distributed time series database that is optimized for high cardinality and high throughput. m3DB is commonly used for storing and querying metrics in large-scale monitoring systems.
+[m3DB](https://m3db.io/) is an open-source distributed time series database that is optimized for high cardinality and high throughput. m3DB is commonly used for storing and querying metrics in large-scale monitoring systems. It was originated at Uber.
 
 ### MTTD
 
@@ -177,7 +177,7 @@ alerting toolkit originally built at SoundCloud.
 
 ### PromQL
 
-PromQL is a query language used to retrieve and analyze metrics from Prometheus, a popular open-source monitoring system.
+PromQL is a query language that retrieves and analyzes metrics from Prometheus, a popular open-source monitoring system. It is like SQL but for time series data. A lot of other time series databases, such as [VictoriaMetrics](https://victoriametrics.com/), and [Levitate](https://last9.io/products/levitate/) are also PromQL compatible.
 
 ### Platform Engineering
 
@@ -205,11 +205,11 @@ system to be trustworthy and predictable in its performance and user experience.
 
 ### Span
 
-A span is a single unit of work in a distributed system, often represented by a trace. Spans can be used to identify the performance of individual components in a system.
+A span is a single unit of work in a distributed system and a primary building block of distributed tracing. A trace represents a user request or a transaction in distributed tracing. Traces are broken down into multiple spans. For example, a function call to authenticate a user during a request can be represented by a span.
 
 ### Serverless
 
-Serverless is a model where a cloud provider manages the infrastructure and automatically scales resources, allowing developers to focus on code. This model is becoming increasingly popular for building and deploying applications.
+Serverless is a deployment model where a cloud provider manages the infrastructure and automatically scales resources, allowing developers to not worry about managing servers.
 
 ### SRE
 
@@ -238,11 +238,11 @@ understand the underlying causes of trends or systemic patterns over time.
 
 ### TSDB
 
-TSDB stands for time-series database. TSDBs are databases optimized for timeestamp data or time-series data, which in the context of observability contains metrics about systems which are timestamped with metrics about a system or service's health.
+TSDB or Time Series Databases are software systems are built for storing and retrieving time series data. Time series data are measurements or events that are tracked, monitored, downsampled, and aggregated over time.
 
 ### Trace
 
-A trace is a detailed record of the path a request takes through a system. Traces can be used to understand the performance of a system and identify bottlenecks.
+A trace is the complete journey of a request or workflow as it moves from one part of the system to another. It is achieved by adding a common trace id as the request/action flows through all the hops.
 
 ## U
 

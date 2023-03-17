@@ -11,6 +11,10 @@ definitions.
 
 ## A
 
+### Alert
+
+An alert is a notification that an incident or specific condition about the health of a system has occured, which indicates potential issues with a service or system.
+
 ### APM
 
 APM or Application Performance monitoring is a software tool which measures and
@@ -29,11 +33,23 @@ OpsGenie. It also takes care of silencing and inhibition of alerts.
 
 ## C
 
+### Cardinality
+
+Cardinality refers to the number of unique values in a set of data. In the context of monitoring systems, high cardinality can negatively impact performance, so it's important to manage the cardinality of metrics and labels
+
 ### Counter
 
 As the name says, counters are used to monitor how frequently an event occurs within a program.
 They help monitor metrics that increase monotonically and are exposed as time series.
 For example, total requests to an API endpoint is a counter metric, it keeps increasing over time.
+
+### CI
+
+CI (Continuous Integration) is a practice of integrating code changes into a shared repository frequently. CI helps detect and resolve conflicts early and ensures that new code integrates smoothly with the existing codebase.
+
+### CD
+
+CD (Continuous Delivery) is a practice of delivering code changes to production frequently and reliably. CD aims to reduce the time between code changes and deployment, and to ensure that new code changes don't break existing functionality.
 
 ## D
 
@@ -43,9 +59,25 @@ Datalake is a single storage that stores different types of monitoring data such
 as logs, metrics, traces, events. The single storage allows for far more
 corelation than different data being stored at different places.
 
+### DevOps
+
+DevOps is a set of practices that combines software development and operations to shorten the development life cycle and improve reliability. DevOps teams use automation and collaboration to deploy software quickly and reliably.
+
+### Downsampling
+
+Downsampling is the process of reducing the amount of data points in a time series to make it more manageable, without losing too much detail, and can help to save storage and processing resources.
+
 ## E
 
+### Event
+
+An event is a significant occurrence within a system that may require attention. Events can be used to trigger alerts or notify operators of potential issues.
+
 ## F
+
+### FinOps
+
+FinOps is a practice that combines financial and operational management to optimize cloud spending. Finops teams use data-driven approaches to manage cloud costs and improve ROI.
 
 ## G
 
@@ -74,9 +106,45 @@ An incident refers to an unexpected event that causes a system or service to fai
 
 ## K
 
+### Kubernetes
+
+Kubernetes is a popular open-source platform for managing containerized workloads and services. Kubernetes provides features for deploying, scaling, and managing containerized applications.
+
+### KPIs
+
+KPIs (Key Performance Indicator) are specific metrics used to track progress towards a specific goal or objective. In the context of SRE, KPIs can be used to measure the performance and reliability of a system.
+
 ## L
 
+### Log
+
+Logs are an record of activities performed by a system or service over a set period of time. Logs help SRE teams to track behaviours of a system. 
+
 ## M
+
+### Metrics
+
+Metrics are quantifiable measurement about the health of a system. They serve as KPI(Key Performance Indicators) about the health of a system or service, Metrics should be easy to understand and makes SRE teams more effective to track performance of their systems.
+
+### Metric Life Cycle Management
+
+Metric Life Cycle Management is the process of defining, collecting, analyzing, and acting on metrics. It's important to manage the metric life cycle to ensure that metrics are useful and provide insights into the system.
+
+### m3DB
+
+[m3DB](https://m3db.io/) is an open-source distributed time series database that is optimized for high cardinality and high throughput. m3DB is commonly used for storing and querying metrics in large-scale monitoring systems.
+
+### MTTD
+
+MTTD (Mean Time to Detect) is the average time it takes to identify that an incident has occurred. It's an important metric because the faster an incident is detected, the faster it can be resolved.
+
+### MTBI
+
+MTBI (Mean Time Between Incidents) measures the average time between incidents. A high MTBI indicates that the system is reliable and stable.
+
+### MTTR
+
+MTTR (Mean Time to Recover/Resolve) is the average time it takes to recover or resolve an incident. A low MTTR indicates that the system is resilient and can recover quickly from incidents.
 
 ## N
 
@@ -102,6 +170,14 @@ debugging suggestions and possible actions to take to mitigate the alert.
 [Prometheus](https://prometheus.io/) is an open-source systems monitoring and
 alerting toolkit originally built at SoundCloud.
 
+### PromQL
+
+PromQL is a query language used to retrieve and analyze metrics from Prometheus, a popular open-source monitoring system.
+
+### Platform Engineering
+
+Platform engineering is the design, implementation, and maintenance of software platforms that support other applications and services. Platforms can include infrastructure, tools, and services that are used by other teams in the organization.
+
 ## Q
 
 ## R
@@ -122,6 +198,26 @@ system to be trustworthy and predictable in its performance and user experience.
 
 ## S
 
+### Span
+
+A span is a single unit of work in a distributed system, often represented by a trace. Spans can be used to identify the performance of individual components in a system.
+
+### Serverless
+
+Serverless is a model where a cloud provider manages the infrastructure and automatically scales resources, allowing developers to focus on code. This model is becoming increasingly popular for building and deploying applications.
+
+### SRE
+
+SRE (Site Reliability Engineering) is a discipline focused on improving and maintaining the reliability of systems. SREs use a data-driven approach to manage the performance and availability of systems.
+
+### Service Discovery
+
+Service discovery is the process of automatically identifying and locating available services in a distributed system. Service discovery is important for managing the complexity of distributed systems.
+
+### Samples
+
+Samples are individual data points in a time series. Metrics are collected as samples at regular intervals and are used to analyze the behavior of a system over time.
+
 ## T
 
 ### Telemetry
@@ -138,6 +234,10 @@ understand the underlying causes of trends or systemic patterns over time.
 ### TSDB
 
 TSDB stands for time-series database. TSDBs are databases optimized for timeestamp data or time-series data, which in the context of observability contains metrics about systems which are timestamped with metrics about a system or service's health.
+
+### Trace
+
+A trace is a detailed record of the path a request takes through a system. Traces can be used to understand the performance of a system and identify bottlenecks.
 
 ## U
 

@@ -221,7 +221,7 @@ Service Discovery is automatically identifying and locating available services i
 
 ### Samples
 
-Samples are individual data points in a time series. Metrics are collected as samples at regular intervals and are used to analyze the behavior of a system over time.
+Samples are individual data points in a time series. Metrics are collected as samples at regular intervals and are used to analyze the behavior of a system over time. A lot of time series databases use samples as billing metric.
 
 ## T
 

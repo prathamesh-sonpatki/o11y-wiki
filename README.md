@@ -36,7 +36,11 @@ OpsGenie. It also takes care of silencing and inhibition of alerts.
 
 ### Cardinality
 
-Cardinality refers to the number of unique values in a set of data. In the context of monitoring systems, high cardinality can negatively impact performance, so it's important to manage the cardinality of metrics and labels
+Cardinality refers to the number of unique attributes of a metric. Eg. for a metric which tracks
+no. of requests to an HTTP service, the attributes such as user's email can explode the unique 
+combinations of the metric because each user's email will result into a unique [time series](#time-series).
+High cardinality can result into latent dashboards because it causes querying of data slow due to higher
+computation and memory overhead.
 
 ### Counter
 

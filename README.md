@@ -13,7 +13,8 @@ definitions.
 
 ### Alert
 
-An alert is a notification that an incident or specific condition about the health of a system has occured, which indicates potential issues with a service or system.
+An alert is a trigger that a specific change in the health of a system has occured, which indicates potential issues. 
+An alert will result into a notification to the system operators so that they can take further actions to remediate or fix the issues.
 
 ### APM
 

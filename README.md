@@ -217,7 +217,7 @@ SRE (Site Reliability Engineering) is a discipline focused on improving and main
 
 ### Service Discovery
 
-Service discovery is the process of automatically identifying and locating available services in a distributed system. Service discovery is important for managing the complexity of distributed systems.
+Service Discovery is automatically identifying and locating available services in a distributed system. Service Discovery is essential for managing the complexity of distributed systems because of the dynamic and ephemeral nature of the systems.
 
 ### Samples
 

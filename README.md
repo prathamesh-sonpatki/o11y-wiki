@@ -50,7 +50,7 @@ For example, total requests to an API endpoint is a counter metric, it keeps inc
 
 ### CI
 
-CI (Continuous Integration) is a practice of integrating code changes into a shared repository frequently. CI helps detect and resolve conflicts early and ensures that new code integrates smoothly with the existing codebase.
+CI (Continuous Integration) integrates code changes into a common branch of a shared repository and runs automated tests against it every time the changes are merged, or a commit is made. This allows for detecting issues in the code faster because it is tested continuously, as the name says.
 
 ### CD
 

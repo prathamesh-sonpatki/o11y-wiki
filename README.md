@@ -66,6 +66,10 @@ of data in specific buckets. Latency can be good example of a histogram metric.
 
 ## I
 
+### Incident
+
+An incident refers to an unexpected event that causes a system or service to fail or degrade. Examples of incidents can include server crashes, network outages, data center failures, or security breaches.
+
 ## J
 
 ## K

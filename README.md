@@ -54,7 +54,7 @@ CI (Continuous Integration) integrates code changes into a common branch of a sh
 
 ### CD
 
-CD (Continuous Delivery) is a practice of delivering code changes to production frequently and reliably. CD aims to reduce the time between code changes and deployment, and to ensure that new code changes don't break existing functionality.
+CD (Continuous Delivery) is the practice of delivering code changes to production frequently and reliably. An example would be using GitHub Actions to run tests via CI, prepare a docker image for the app once the tests pass, and then trigger the deployment via CD.
 
 ## D
 

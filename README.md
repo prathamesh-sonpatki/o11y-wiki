@@ -70,7 +70,7 @@ DevOps is a set of practices that combines software development and operations t
 
 ### Downsampling
 
-Downsampling is the process of reducing the amount of data points in a time series to make it more manageable, without losing too much detail, and can help to save storage and processing resources.
+Downsampling is the process of reducing the amount of data points in a time series to make it more manageable without losing the essence and can help reduce the cost of storage and performance of querying. 
 
 ## E
 

@@ -1,6 +1,6 @@
 <img src="/assets/logo.svg" alt="o11y.wiki" title="The Observability Wiki" height="80" width="68" />
 
-[![Open Source Helpers](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki/badges/users.svg)](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki)
+![GitHub last commit](https://img.shields.io/github/last-commit/prathamesh-sonpatki/o11y-wiki?style=flat-square) [![Open Source Helpers](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki/badges/users.svg)](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki) ![Discord](https://img.shields.io/discord/900280171762942012) 
 
 # o11y.wiki
 

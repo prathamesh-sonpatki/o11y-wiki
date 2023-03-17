@@ -137,7 +137,7 @@ understand the underlying causes of trends or systemic patterns over time.
 
 ### TSDB
 
-TSDB stands for time-series database. TSDBs are databases optimized for timeestamp data or time-series data, which in the context of observability contains metrics about systems which are timestamped about a system or service's health.
+TSDB stands for time-series database. TSDBs are databases optimized for timeestamp data or time-series data, which in the context of observability contains metrics about systems which are timestamped with metrics about a system or service's health.
 
 ## U
 

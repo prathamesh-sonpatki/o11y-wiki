@@ -66,7 +66,7 @@ corelation than different data being stored at different places.
 
 ### DevOps
 
-DevOps is a set of practices that combines software development and operations to shorten the development life cycle and improve reliability. DevOps teams use automation and collaboration to deploy software quickly and reliably.
+DevOps is a set of practices that combines software development and operations to shorten the development life cycle and improve reliability. The idea behind the DevOps movement is to reduce silos between different teams and make software delivery faster and more reliable via automation and collaboration.
 
 ### Downsampling
 

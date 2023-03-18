@@ -78,6 +78,10 @@ Downsampling reduces the data points in a time series to make it more manageable
 
 Events are hard to define because everything is an event, but let us give it a try 😉. An event is primarily a change event that can mean a pod restart, deployment, or configuration flag change. Events are important because they affect the system's state externally and can help correlate incidents with metrics, traces, and logs.
 
+### Exporter
+
+An exporter is a component that collects and transforms metrics data from a specific system or format into a standardized format that can be consumed by monitoring systems. Examples of exporters include Prometheus exporters and OpenTelemetry exporters.
+
 ## F
 
 ### FinOps
@@ -93,6 +97,10 @@ A gauge's value is not ever-increasing; it can increase or decrease over time.
 An example of a gauge metric is CPU percentage, which will change over time, either increasing
 or decreasing.
 
+### Gateway
+
+A gateway is a component that acts as an entry point for traffic from external sources into a system. In the context of SRE, gateways can be used to manage traffic routing, load balancing, and security.
+
 ## H
 
 ### Histogram
@@ -106,6 +114,10 @@ of data in specific buckets. Latency can be an excellent example of a histogram 
 ### Incident
 
 An incident is an unexpected event that causes a system or service to fail or degrade. Examples of incidents can include service degradation, downtimes, server crashes, network outages, data center failures, or security breaches.
+
+### InfluxDB
+
+InfluxDB is a time-series database that is often used in conjunction with monitoring systems like Telegraf and Grafana. It is optimized for fast ingestion and querying of metrics data.
 
 ## J
 
@@ -151,9 +163,17 @@ MTBI (Mean Time Between Incidents) measures the average time between incidents. 
 
 MTTR (Mean Time to Recover/Resolve) is the average time to recover or resolve an incident. A low MTTR indicates that the system is resilient and can recover quickly from incidents.
 
+### Monitoring 
+
+Monitoring is the process of collecting and analyzing data about a system to ensure its reliability, availability, and performance. In SRE, monitoring is a critical activity that helps to detect and resolve issues before they impact users.
+
 ## N
 
 ## O
+
+### Observability
+
+Observability is the ability to understand the internal state of a system based on its external outputs. In SRE, observability is achieved through the collection and analysis of telemetry data, including metrics, logs, and traces.
 
 ### o11y
 
@@ -162,6 +182,18 @@ o11y stands for Observability!
 The "11" in the middle stems from software engineering conventions that shorten
 long words by substituting middle letters with the number of middle letters
 instead. Like, a11y stands for accessibility.
+
+### OpenMetrics
+
+OpenMetrics is a standard for collecting and transmitting metrics data, developed by Prometheus and other contributors. It provides a common format for metrics that can be used across multiple monitoring systems.
+
+### OpenCensus
+
+OpenCensus is an open-source library for collecting and exporting metrics and traces data from applications. It supports multiple languages and can be integrated with various monitoring and analysis tools.
+
+### OpenTelemetry
+
+OpenTelemetry is a set of open-source libraries and tools for collecting, processing, and exporting telemetry data from applications. It provides a vendor-neutral, standard way of collecting observability data and can be integrated with various systems.
 
 ## P
 
@@ -186,6 +218,10 @@ Platform engineering is designing, implementing, and maintaining software platfo
 ## Q
 
 ## R
+
+### Runbook
+
+A runbook is a document that provides step-by-step instructions for executing routine tasks or procedures. Runbooks are used in SRE to standardize and automate common operational procedures.
 
 ### RED
 
@@ -223,6 +259,26 @@ Service Discovery is automatically identifying and locating available services i
 
 Samples are individual data points in a time series. Metrics are collected as samples at regular intervals and are used to analyze the behavior of a system over time. Many time series databases use samples as billing metrics.
 
+### Sampling 
+
+Sampling is the process of collecting a representative subset of data from a larger set. In the context of monitoring systems, sampling can be used to reduce the amount of data that needs to be collected and processed, while still providing meaningful insights.
+
+### Service
+
+A service is a software component or system that provides a specific set of functions to other applications or users. In SRE, services are monitored and managed to ensure their reliability and availability.
+
+### Summary
+
+A summary is a statistical representation of a set of data that shows its distribution and summary statistics, such as mean and variance.
+
+### Sidecar
+
+A sidecar is a container that runs alongside an application container and provides additional functionality, such as monitoring or service discovery. Sidecars can be used to separate cross-cutting concerns and simplify application development.
+
+### Statsd
+
+Statsd is a protocol and tool for collecting and aggregating metrics data from applications. It is often used in conjunction with monitoring systems like Graphite or Prometheus.
+
 ## T
 
 ### Telemetry
@@ -243,6 +299,18 @@ TSDB or Time Series Databases are software systems for storing and retrieving ti
 ### Trace
 
 A trace is the complete journey of a request or workflow as it moves from one part of the system to another. It is achieved by adding a standard trace id as the request/action flows through all the hops.
+
+### Tail Sampling
+
+Tail sampling is a technique for collecting metrics data from the slowest requests in a system. This can be useful for understanding the causes of tail latency and identifying performance bottlenecks.
+
+### Tail Latency
+
+Tail latency refers to the latency of the slowest requests in a system. In SRE, tail latency is an important metric to monitor, as it can have a significant impact on the user experience and overall system performance.
+
+### Telegraf
+
+Telegraf is a plugin-driven agent for collecting and reporting metrics data from various sources.
 
 ## U
 

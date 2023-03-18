@@ -1,35 +1,33 @@
 <img src="/assets/logo.svg" alt="o11y.wiki" title="The Observability Wiki" height="80" width="68" />
 
-![GitHub last commit](https://img.shields.io/github/last-commit/prathamesh-sonpatki/o11y-wiki?style=flat-square) [![Open Source Helpers](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki/badges/users.svg)](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki) ![Discord](https://img.shields.io/discord/900280171762942012) 
+![GitHub last commit](https://img.shields.io/github/last-commit/prathamesh-sonpatki/o11y-wiki?style=flat-square) [![Open Source Helpers](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki/badges/users.svg)](https://www.codetriage.com/prathamesh-sonpatki/o11y-wiki) ![Discord](https://img.shields.io/discord/900280171762942012)
 
 # o11y.wiki
 
 A glossary of all terms related to Observability, starting from A to Z! The
-inspiration of this project started from the desire to understand and document
-terms and concepts related to Observability at one single place.
+inspiration for this project started from the desire to understand and document terms and concepts related to Observability in one single place.
 
-Below document contains all the terms sorted alphabetically with their
-definitions.
+The below document contains all the terms sorted alphabetically with their definitions.
 
 ## A
 
 ### Alert
 
-An alert is a trigger that a specific change in the health of a system has occured, which indicates potential issues. 
-An alert will result into a notification to the system operators so that they can take further actions to remediate or fix the issues.
+An alert is a trigger that a specific change in a system's health has occurred, which indicates potential issues.
+An alert will result in a notification to the system operators so that they can take further actions to remediate or fix the issues.
 
 ### APM
 
-APM or Application Performance monitoring is a software tool which measures and
-tracks application’s performance. It helps understand answers related to how the
-application is performing in real time.
+APM, or Application Performance monitoring, is a software tool that measures and
+tracks an application's performance. It helps understand answers related to how the
+application is performing in real-time.
 
 ### Alertmanager
 
 The [Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/) is
 a component used with Prometheus that handles alerts sent by client applications
 such as the Prometheus server. It takes care of deduplicating, grouping, and
-routing them to the correct receiver integration such as email, PagerDuty, or
+routing them to the correct receiver integration, such as email, PagerDuty, or
 OpsGenie. It also takes care of silencing and inhibition of alerts.
 
 ## B
@@ -38,21 +36,21 @@ OpsGenie. It also takes care of silencing and inhibition of alerts.
 
 ### Cardinality
 
-Cardinality refers to the number of unique attributes of a metric. Eg. for a metric which tracks
-no. of requests to an HTTP service, the attributes such as user's email can explode the unique 
-combinations of the metric because each user's email will result into a unique [time series](#time-series).
-High cardinality can result into latent dashboards because it causes querying of data slow due to higher
+Cardinality refers to the number of unique attributes of a metric. E.g., for a metric that tracks
+no. of requests to an HTTP service, the attributes such as the user's email can explode the unique
+combinations of the metric because each user's email will result in a unique [time series](#time-series).
+High cardinality can result in latent dashboards because it causes querying of data slow due to higher
 computation and memory overhead.
 
 ### Counter
 
-As the name says, counters are used to monitor how frequently an event occurs within a program.
+As the name says, counters monitor how frequently an event occurs within a program.
 They help monitor metrics that increase monotonically and are exposed as time series.
-For example, total requests to an API endpoint is a counter metric, it keeps increasing over time.
+For example, total requests to an API endpoint are a counter metric that keeps increasing over time.
 
 ### CI
 
-CI (Continuous Integration) integrates code changes into a common branch of a shared repository and runs automated tests against it every time the changes are merged, or a commit is made. This allows for detecting issues in the code faster because it is tested continuously, as the name says.
+CI (Continuous Integration) integrates code changes into a common branch of a shared repository and runs automated tests against it every time the changes are merged, or a commit is made. It allows for detecting issues in the code faster because it is tested continuously, as the name says.
 
 ### CD
 
@@ -60,11 +58,11 @@ CD (Continuous Delivery) is the practice of delivering code changes to productio
 
 ## D
 
-### Datalake
+### Data lake
 
-Datalake is a single storage that stores different types of monitoring data such
-as logs, metrics, traces, events. The single storage allows for far more
-corelation than different data being stored at different places.
+Datalake is a single storage that stores different types of monitoring data, such
+as logs, metrics, traces, and events. Single storage allows for far more
+correlation than data stored at different places.
 
 ### DevOps
 
@@ -72,13 +70,13 @@ DevOps is a set of practices that combines software development and operations t
 
 ### Downsampling
 
-Downsampling is the process of reducing the amount of data points in a time series to make it more manageable without losing the essence and can help reduce the cost of storage and performance of querying. 
+Downsampling reduces the data points in a time series to make it more manageable without losing the essence. It can reduce the cost of storage and the performance of querying.
 
 ## E
 
 ### Event
 
-Events are hard to define because everything is an event, but let's give it a try 😉. An event is primarily a change event that can mean a pod restart, deployment, or configuration flag change. Events are important because they affect the system's state externally and can help correlate incidents with metrics, traces, and logs.
+Events are hard to define because everything is an event, but let us give it a try 😉. An event is primarily a change event that can mean a pod restart, deployment, or configuration flag change. Events are important because they affect the system's state externally and can help correlate incidents with metrics, traces, and logs.
 
 ## F
 
@@ -91,17 +89,17 @@ FinOps is a practice that combines financial and operational management to optim
 ### Gauge
 
 Gauges periodically measure a metric or take a snapshot at a specific moment.
-A gauge's value is not ever-increasing; it can go up or down over time.
-An example of a gauge metric is CPU percentage, which will change over time either increasing
+A gauge's value is not ever-increasing; it can increase or decrease over time.
+An example of a gauge metric is CPU percentage, which will change over time, either increasing
 or decreasing.
 
 ## H
 
 ### Histogram
 
-In statistics, a histogram is a graphical representation of the distribution of data.
-In the context of Observability, histograms are type of metrics that represent distribution
-of data in specific buckets. Latency can be good example of a histogram metric.
+In statistics, a histogram is a graphical representation of the data distribution.
+In the context of Observability, histograms are the metrics that represent the distribution
+of data in specific buckets. Latency can be an excellent example of a histogram metric.
 
 ## I
 
@@ -125,25 +123,25 @@ KPIs (Key Performance Indicators) track progress toward a specific goal or objec
 
 ### Log
 
-Logs record activities a system, service, or tool performs over a set time. They are easy to adopt but run into standardization challenges because different tools and languages can have different logging patterns. Logs can grow quickly but are extremely important for debugging a problem once identified.
+Logs record activities a system, service, or tool performs over time. They are easy to adopt but run into standardization challenges because different tools and languages can have different logging patterns. Logs can overgrow but are extremely important for debugging a problem once identified.
 
 ## M
 
 ### Metrics
 
-Metrics are quantifiable measurements of the health of a system. They are the fastest and cheapest way to understand the health of the system. They are aggregated data essentially giving a bird's eye view of the system performance. An example of a metric is the throughput of an API or latency.
+Metrics are quantifiable measurements of the health of a system. They are the fastest and cheapest way to understand the system's health. They are aggregated data, giving a bird's eye view of the system's performance. An example of a metric is the throughput of an API or latency.
 
 ### Metric Life Cycle Management
 
-Metric Life Cycle Management defines, collects, analyzes, and acts on metrics. This essentially involves creating a pipeline of metrics that moves from ingestion, storage, query, and alerting stages. You can drop unused data, perform streaming aggregates, and provide control over how and who can query specific data and define alerting.
+Metric Life Cycle Management defines, collects, analyzes, and acts on metrics. This involves creating a pipeline of metrics that moves from ingestion, storage, query, and alerting stages. It allows operations such as dropping unused data, performing streaming aggregates, and providing control over how and who can query specific data and define alerting.
 
 ### m3DB
 
-[m3DB](https://m3db.io/) is an open-source distributed time series database that is optimized for high cardinality and high throughput. m3DB is commonly used for storing and querying metrics in large-scale monitoring systems. It was originated at Uber.
+[m3DB](https://m3db.io/) is an open-source distributed time series database optimized for high cardinality and throughput. m3DB is commonly used for storing and querying metrics in large-scale monitoring systems. It originated at Uber.
 
 ### MTTD
 
-MTTD (Mean Time to Detect) is the average time it takes to identify that an incident has occurred. It's an important metric because the faster an incident is detected, the faster it can be resolved.
+MTTD (Mean Time to Detect) is the average time it takes to identify that an incident has occurred. It is an important metric because the faster an incident is detected, the faster it can be resolved.
 
 ### MTBI
 
@@ -151,7 +149,7 @@ MTBI (Mean Time Between Incidents) measures the average time between incidents. 
 
 ### MTTR
 
-MTTR (Mean Time to Recover/Resolve) is the average time it takes to recover or resolve an incident. A low MTTR indicates that the system is resilient and can recover quickly from incidents.
+MTTR (Mean Time to Recover/Resolve) is the average time to recover or resolve an incident. A low MTTR indicates that the system is resilient and can recover quickly from incidents.
 
 ## N
 
@@ -159,9 +157,9 @@ MTTR (Mean Time to Recover/Resolve) is the average time it takes to recover or r
 
 ### o11y
 
-o11y stands for observability!
+o11y stands for Observability!
 
-The “11” in the middle stems from software engineering conventions that shorten
+The "11" in the middle stems from software engineering conventions that shorten
 long words by substituting middle letters with the number of middle letters
 instead. Like, a11y stands for accessibility.
 
@@ -179,11 +177,11 @@ alerting toolkit originally built at SoundCloud.
 
 ### PromQL
 
-PromQL is a query language that retrieves and analyzes metrics from Prometheus, a popular open-source monitoring system. It is like SQL but for time series data. A lot of other time series databases, such as [VictoriaMetrics](https://victoriametrics.com/), and [Levitate](https://last9.io/products/levitate/) are also PromQL compatible.
+PromQL is a query language that retrieves and analyzes metrics from Prometheus, a popular open-source monitoring system. It is like SQL but for time series data. A lot of other time series databases, such as [VictoriaMetrics](https://victoriametrics.com/) and [Levitate](https://last9.io/products/levitate/), are also PromQL compatible.
 
 ### Platform Engineering
 
-Platform engineering is the design, implementation, and maintenance of software platforms that support other applications and services. Platforms can include infrastructure, tools, and services that are used by other teams in the organization.
+Platform engineering is designing, implementing, and maintaining software platforms that support other applications and services. Platforms can include infrastructure, tools, and services used by other teams in the organization.
 
 ## Q
 
@@ -191,7 +189,7 @@ Platform engineering is the design, implementation, and maintenance of software 
 
 ### RED
 
-RED stands for Rate, Error, and Duration the three key metrics that can help
+RED stands for Rate, Error, and Duration, the three key metrics that can help
 monitor any service.
 
 - Rate - The number of requests the service is handling
@@ -200,7 +198,7 @@ monitor any service.
 
 ### Reliability
 
-Reliability is hard to define but it can be termed as the quality of software
+Reliability is hard to define, but it can be termed as the quality of software
 system to be trustworthy and predictable in its performance and user experience.
 
 ## S
@@ -223,7 +221,7 @@ Service Discovery is automatically identifying and locating available services i
 
 ### Samples
 
-Samples are individual data points in a time series. Metrics are collected as samples at regular intervals and are used to analyze the behavior of a system over time. A lot of time series databases use samples as billing metric.
+Samples are individual data points in a time series. Metrics are collected as samples at regular intervals and are used to analyze the behavior of a system over time. Many time series databases use samples as billing metrics.
 
 ## T
 
@@ -240,11 +238,11 @@ understand the underlying causes of trends or systemic patterns over time.
 
 ### TSDB
 
-TSDB or Time Series Databases are software systems are built for storing and retrieving time series data. Time series data are measurements or events that are tracked, monitored, downsampled, and aggregated over time.
+TSDB or Time Series Databases are software systems for storing and retrieving time series data. Time series data are measurements or events that are tracked, monitored, downsampled, and aggregated over time.
 
 ### Trace
 
-A trace is the complete journey of a request or workflow as it moves from one part of the system to another. It is achieved by adding a common trace id as the request/action flows through all the hops.
+A trace is the complete journey of a request or workflow as it moves from one part of the system to another. It is achieved by adding a standard trace id as the request/action flows through all the hops.
 
 ## U
 
@@ -253,7 +251,7 @@ A trace is the complete journey of a request or workflow as it moves from one pa
 USE stands for Utilization Saturation and Errors.
 
 - Utilization: the average time the resource was busy servicing work
-- Saturation: the degree to which the resource has extra work which it can't service, often queued
+- Saturation: the degree to which the resource has extra work which it cannot service, often queued
 - Errors: the count of error events
 
 Check https://www.brendangregg.com/usemethod.html for more details.
@@ -271,12 +269,12 @@ Check https://www.brendangregg.com/usemethod.html for more details.
 
 # FAQs
 
-1. I want to add a new addition to the Gloassry, how should I do it?
+1. I want to add a new addition to the Glossary. How should I do it?
 
    - Please send a pull request to this
      [GitHub repository](https://github.com/prathamesh-sonpatki/o11y-wiki).
 
-2. What is considered as part of Observability Glossary?
+2. What is considered part of the Observability Glossary?
 
    - Any term or concept related to Observability.
 
@@ -284,6 +282,6 @@ Check https://www.brendangregg.com/usemethod.html for more details.
 
 # Thanks
 
-This glossary is sponsored by [Last9](https://last9.io).
+This Glossary is sponsored by [Last9](https://last9.io).
 
 <a href="https://last9.io"><img src="https://last9.github.io/assets/email-logo-green.png" alt="" loading="lazy" height="40px" /></a>

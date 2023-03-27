@@ -1,7 +1,7 @@
 Thank you for showing your interest in contributing to
 [o11y.wiki](https://o11y.wiki)
 
-This project aims to provide a gloassry of every term about Observability. We
+This project aims to provide a glossary of every term about Observability. We
 focus on terminologies over tools and aim to spread knowledge about
 Observability.
 

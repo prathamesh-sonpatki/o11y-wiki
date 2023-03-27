@@ -103,6 +103,16 @@ of data in specific buckets. Latency can be an excellent example of a histogram 
 
 ## I
 
+### Instrumentation
+
+Instrumentation is the process of improving an application's monitoring and tracing capabilities by adding code to specific functions or points in the codebase. Using language-specific instrumentation libraries, this entails writing logic that generates logs, events, or adds timers to functions and other telemetry data. The goal of instrumentation is to make it easier to observe and measure the performance of an application, as well as to detect and diagnose errors. Instrumentation allows developers and operators to gain insights into an application's behaviour and flow by collecting and analysing telemetry data. There are two types of instrumentation available in general.
+
+* Auto Instrumentation: There are intelligent agents available that attach to your application and extract telemetry data, requiring no code changes.
+
+* Manual Instrumentation: As stated in the definition, it requires someone to add code to the application to begin and end a trace, span and define the payload, and add logs. It makes use of instrumentation client libraries and SDKs, which are available for a variety of programming languages.
+
+OpenTelemetry, Zipkin instrumentation libraries are examples.
+
 ### Incident
 
 An incident is an unexpected event that causes a system or service to fail or degrade. Examples of incidents can include service degradation, downtimes, server crashes, network outages, data center failures, or security breaches.

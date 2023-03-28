@@ -56,6 +56,11 @@ CI (Continuous Integration) integrates code changes into a common branch of a sh
 
 CD (Continuous Delivery) is the practice of delivering code changes to production frequently and reliably. An example would be using GitHub Actions to run tests via CI, prepare a docker image for the app once the tests pass, and then trigger the deployment via CD.
 
+### CDN
+
+A CDN (Content Delivery Network) is a network of servers that stores and distributes content to clients. 
+These servers are typically located in data centres, and they can be used to improve performance by reducing latency, ensuring that the content is available at the right time, and ensuring that the content is delivered in a timely manner.
+
 ## D
 
 ### Data lake
@@ -135,6 +140,16 @@ KPIs (Key Performance Indicators) track progress toward a specific goal or objec
 
 Logs record activities a system, service, or tool performs over time. They are easy to adopt but run into standardization challenges because different tools and languages can have different logging patterns. Logs can overgrow but are extremely important for debugging a problem once identified.
 
+### Latency
+
+Latency is an expression of how much time it takes for a data packet to travel from one designated point to another. Ideally, latency will be as close to zero as possible.
+High latency decreases communication bandwidth, and can be temporary or permanent, depending on the source of the delays. Latency is measured in milliseconds, or during speed tests, it's referred to as a ping rate.
+
+### Lag
+
+Lag is a slang term for a noticeable decrease in application speed, due to extreme network congestion or insufficient processing power. 
+When traffic is heavier than network capacity, the network requires that a program wait before sending or receiving data.
+
 ## M
 
 ### Metrics
@@ -211,6 +226,22 @@ monitor any service.
 Reliability is hard to define, but it can be termed as the quality of software
 system to be trustworthy and predictable in its performance and user experience.
 
+### Resiliency
+
+Resiliency is the ability to avoid or mitigate impact from an adverse event by quickly responding to, and fully recovering after, a failure. 
+A focus on resiliency typically amounts to an emphasis on high availability. This allows for increased uptime.
+
+### Recovery
+
+Recovery is the ability to restore service when failure occurs. 
+Recovery is essential to strong resilience. Recovery directly impacts Recovery Time Objective (RTO), the time duration for an application to return to normal service levels after a failure, and Recovery Point Objective (RPO), the tolerance to data loss in terms of time duration. 
+A focus on recovery typically leads to a well founded understanding of both design time and runtime dependencies due to the need to determine recovery methods for all possible failure points.
+
+### RCA
+
+Root cause analysis (RCA) is the process of finding and analyzing the causes of a problem or an event impacting the value delivery of an application or an organization. 
+RCA can find one or more root causes underlying a problem needing to be addressed to solve and prevent the problem from recurring.
+
 ## S
 
 ### Span
@@ -232,6 +263,38 @@ Service Discovery is automatically identifying and locating available services i
 ### Samples
 
 Samples are individual data points in a time series. Metrics are collected as samples at regular intervals and are used to analyze the behavior of a system over time. Many time series databases use samples as billing metrics.
+
+### SLA
+
+A Service-Level Agreement(SLA) is a commitment between a service provider and a customer. Particular aspects of the service – quality, availability, responsibilities – are agreed between the service provider and the service user.
+
+### SLO
+
+A Service-Level Objective(SLO) is a key element of a SLA between a service provider and a customer. SLOs are agreed upon as a means of measuring the performance of the Service Provider and are outlined as a way of avoiding disputes between the two parties based on misunderstanding.
+
+### SLI
+
+A Service-Level Indicator (SLI) is anything that can be precisely measured to assist you in thinking about, defining, and determining if you are satisfying SLOs and SLAs. They are commonly presented as the ratio of the number of excellent occurrences to the total number of events. 
+A simple example would be the number of successful HTTP requests divided by the total number of HTTP queries. SLIs are typically stated as a percentage, with 0 indicating that everything is broken and 100 indicating that everything is operating flawlessly.
+Some of the most common types of SLIs are Availability, Latency, Error Rate and Throughput.
+
+### Severity
+
+Incident Severity Levels are a measurement of the impact an incident has on the business. Classifying the Severity of an issue is critical to decide how quickly and efficiently problems get resolved. There are 4 recognized Severity levels.
+Level 1 – Critical Impact/System Down. Complete system outage.
+Level 2 – Significant Impact/Severe downgrade of services.
+Level 3 – Minor impact/Most of the system is functioning properly.
+Level 4 – Low Impact/Informational.
+
+### Scaling
+
+A service is said to be scalable if, as resources are added to the system, it results in increased performance in a manner proportional to resources added. An always-on service is said to be scalable if adding resources to facilitate redundancy does not result in a loss of performance.
+Two main ways an application can scale include vertical scaling and horizontal scaling. Vertical scaling (scaling up) increases the capacity of a resource, for example, by using a larger virtual machine (VM) size. Horizontal scaling (scaling out) adds new instances of a resource, such as VMs or database replicas.
+
+### Saturation
+
+The term Saturation determines how "full" your service is. The type of application that you're monitoring is directly related to the utilization metrics that you use to determine saturation. 
+Saturation is the most challenging signal to implement. You need utilization metrics and the utmost flexibility to determine saturation.
 
 ## T
 
@@ -268,6 +331,18 @@ Check https://www.brendangregg.com/usemethod.html for more details.
 
 
 ## V
+
+### Virtualization
+
+Virtualization is the process of using one physical system to run multiple virtual machines. It is commonly used by companies that want to consolidate computing resources and keep them running 24/7 without having to buy more hardware. 
+Virtualization can be used for testing purposes, such as for software development or system performance testing.  Virtualization can also be used to create hybrid environments where physical servers are augmented by cloud-based services.
+
+There are many different types of virtualization technology available today, including:
+
+VMware - This is one of the most popular virtualization technologies available today. It runs on almost any platform and is easy to install and manage. It’s also very cost-effective because it leverages a lot of existing hardware and software infrastructure already in place.
+Windows Server - Windows Server is a common choice for virtualizing Microsoft applications because it has built-in support for Hyper-V, making it easy to deploy and manage. There are also several third-party solutions available to further augment administrator capabilities.
+Hyper-V - This is another option that’s popular with organizations looking to virtualize their servers. While it’s not as widely used as Hyper-V, it’s still an option that’s worth exploring if you’re looking for a low-cost way to virtualize. It’s one of the newer options available, so it might not be as widely accepted as the others but it’s still a valid option.
+
 
 ## W
 

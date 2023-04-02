@@ -277,7 +277,7 @@ A sidecar is a container that runs alongside an application container and provid
 
 ### StatsD
 
-Statsd is a protocol and tool for collecting and aggregating metrics data from applications. It is often used in conjunction with monitoring systems like Graphite or Prometheus.
+StatsD is a daemon for collecting and aggregating metrics data. It is often used in conjunction with monitoring systems like Graphite or Prometheus. StatsD was originally written at [Etsy](http://www.etsy.com/) and released with a [blog post](https://codeascraft.etsy.com/2011/02/15/measure-anything-measure-everything/) about how it works and why we created it.
 
 ## T
 

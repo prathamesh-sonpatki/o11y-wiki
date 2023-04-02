@@ -275,7 +275,7 @@ A summary is a Prometheus metric type that can be used for that can be used to m
 
 A sidecar is a container that runs alongside an application container and provides additional functionality, such as monitoring or service discovery. Sidecars can be used to separate cross-cutting concerns and simplify application development.
 
-### Statsd
+### StatsD
 
 Statsd is a protocol and tool for collecting and aggregating metrics data from applications. It is often used in conjunction with monitoring systems like Graphite or Prometheus.
 

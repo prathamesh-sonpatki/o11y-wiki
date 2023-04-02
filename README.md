@@ -117,7 +117,7 @@ An incident is an unexpected event that causes a system or service to fail or de
 
 ### InfluxDB
 
-InfluxDB is a time-series database that is often used in conjunction with monitoring systems like Telegraf and Grafana. It is optimized for fast ingestion and querying of metrics data.
+InfluxDB is an open-source time-series database developed by the company InfluxData. It is designed to store large volumes of time series data and quickly perform real-time analysis on that data. It has its query language InfluxQL. It can be used with Grafana as a visualization tool.
 
 ## J
 

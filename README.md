@@ -189,7 +189,7 @@ instead. Like, a11y stands for accessibility.
 
 ### OpenCensus
 
-OpenCensus is an open-source library for collecting and exporting metrics and traces data from applications. It supports multiple languages and can be integrated with various monitoring and analysis tools.
+[OpenCensus](https://opencensus.io/) is a collection of libraries from different languages for collecting and exporting metrics and trace data from applications. It is merged along with OpenTracing into OpenTelemetry.
 
 ### OpenTelemetry
 

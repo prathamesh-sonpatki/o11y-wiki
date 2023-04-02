@@ -193,7 +193,7 @@ instead. Like, a11y stands for accessibility.
 
 ### OpenTelemetry
 
-OpenTelemetry is a set of open-source libraries and tools for collecting, processing, and exporting telemetry data from applications. It provides a vendor-neutral, standard way of collecting observability data and can be integrated with various systems.
+[OpenTelemetry](https://opentelemetry.io/) is a set of open-source libraries and tools for collecting, processing, and exporting telemetry data from applications. It provides a vendor-neutral, standard way of collecting observability data and can be integrated with various systems.
 
 ## P
 

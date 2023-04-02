@@ -310,7 +310,7 @@ Tail latency refers to the latency of the slowest requests in a system. Tail lat
 
 ### Telegraf
 
-Telegraf is a plugin-driven agent for collecting and reporting metrics data from various sources.
+[Telegraf](https://www.influxdata.com/time-series-platform/telegraf/) is a server-based agent for collecting and sending all metrics and events from various data sources. It provides plugins for input, process, aggregate and output functions of telemetry data.
 
 ## U
 

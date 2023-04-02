@@ -83,6 +83,10 @@ Downsampling reduces the data points in a time series to make it more manageable
 
 Events are hard to define because everything is an event, but let us give it a try 😉. An event is primarily a change event that can mean a pod restart, deployment, or configuration flag change. Events are important because they affect the system's state externally and can help correlate incidents with metrics, traces, and logs.
 
+### Exporter
+
+An exporter is a component that collects and transforms metrics data from a specific system or format into a standardized format that can be consumed by monitoring systems. Examples of exporters include Prometheus exporters and OpenTelemetry exporters.
+
 ## F
 
 ### FinOps
@@ -97,6 +101,10 @@ Gauges periodically measure a metric or take a snapshot at a specific moment.
 A gauge's value is not ever-increasing; it can increase or decrease over time.
 An example of a gauge metric is CPU percentage, which will change over time, either increasing
 or decreasing.
+
+### Gateway
+
+A gateway is a component that acts as an entry point for traffic from external sources into a system. In the context of observability, gateways can be used to manage traffic routing, load balancing, and security.
 
 ## H
 
@@ -121,6 +129,10 @@ OpenTelemetry, Zipkin instrumentation libraries are examples.
 ### Incident
 
 An incident is an unexpected event that causes a system or service to fail or degrade. Examples of incidents can include service degradation, downtimes, server crashes, network outages, data center failures, or security breaches.
+
+### InfluxDB
+
+InfluxDB is an open-source time-series database developed by the company InfluxData. It is designed to store large volumes of time series data and quickly perform real-time analysis on that data. It has its query language InfluxQL. It can be used with Grafana as a visualization tool.
 
 ## J
 
@@ -176,9 +188,17 @@ MTBI (Mean Time Between Incidents) measures the average time between incidents. 
 
 MTTR (Mean Time to Recover/Resolve) is the average time to recover or resolve an incident. A low MTTR indicates that the system is resilient and can recover quickly from incidents.
 
+### Monitoring 
+
+Monitoring is collecting and analyzing data about a system from outside based on the data that the system outputs. In observability terminology, monitoring is sometimes also restricted to metrics management.
+
 ## N
 
 ## O
+
+### Observability
+
+Observability is the ability to understand the internal state of a system based on its external outputs. Observability is achieved by collecting and analyzing telemetry data, including metrics, logs, and traces.
 
 ### o11y
 
@@ -187,6 +207,18 @@ o11y stands for Observability!
 The "11" in the middle stems from software engineering conventions that shorten
 long words by substituting middle letters with the number of middle letters
 instead. Like, a11y stands for accessibility.
+
+### OpenMetrics
+
+[OpenMetrics](https://openmetrics.io/) is a standard aimed at evolving the Prometheus exposition format. It supports text representation and Protocol Buffers and brings it into an Internet Engineering Task Force (IETF) standard. It supports both pull and push-based data collection.
+
+### OpenCensus
+
+[OpenCensus](https://opencensus.io/) is a collection of libraries from different languages for collecting and exporting metrics and trace data from applications. It is merged along with OpenTracing into OpenTelemetry.
+
+### OpenTelemetry
+
+[OpenTelemetry](https://opentelemetry.io/) is a set of open-source libraries and tools for collecting, processing, and exporting telemetry data from applications. It provides a vendor-neutral, standard way of collecting observability data and can be integrated with various systems.
 
 ## P
 
@@ -211,6 +243,10 @@ Platform engineering is designing, implementing, and maintaining software platfo
 ## Q
 
 ## R
+
+### Runbook
+
+A runbook is a document that provides step-by-step instructions for executing routine tasks or procedures. Runbooks are used to standardize and automate standard operational procedures.
 
 ### RED
 
@@ -296,6 +332,29 @@ Two main ways an application can scale include vertical scaling and horizontal s
 The term Saturation determines how "full" your service is. The type of application that you're monitoring is directly related to the utilization metrics that you use to determine saturation. 
 Saturation is the most challenging signal to implement. You need utilization metrics and the utmost flexibility to determine saturation.
 
+### Service
+
+A [Service](https://last9.io/blog/services-not-server-observability/) is a software component or system providing specific functions to other applications or users. 
+A service can be
+- Combination of endpoints that fall under the purview of a payment team.
+- A piece of code catering to the Reconciliation workflow.
+- A demographic-based Personal Information Collector.
+- A data warehouse catering to the API and Billing teams.
+
+Or A combination of all of the above.
+
+### Summary
+
+A summary is a Prometheus metric type that can be used for that can be used to monitor latencies (or other distributions like request sizes). They are similar to Histograms. However, unlike histograms, they give you the exact quantile values instead of estimates. They work best when you need the same latency value, such as P99, and do not want to avoid going through the hassles of setting histogram buckets.
+
+### Sidecar
+
+A sidecar is a container that runs alongside an application container and provides additional functionality, such as monitoring or service discovery. Sidecars can be used to separate cross-cutting concerns and simplify application development.
+
+### StatsD
+
+StatsD is a daemon for collecting and aggregating metrics data. It is often used in conjunction with monitoring systems like Graphite or Prometheus. StatsD was originally written at [Etsy](http://www.etsy.com/) and released with a [blog post](https://codeascraft.etsy.com/2011/02/15/measure-anything-measure-everything/) about how it works and why we created it.
+
 ## T
 
 ### Telemetry
@@ -316,6 +375,18 @@ TSDB or Time Series Databases are software systems for storing and retrieving ti
 ### Trace
 
 A trace is the complete journey of a request or workflow as it moves from one part of the system to another. It is achieved by adding a standard trace id as the request/action flows through all the hops.
+
+### Tail Sampling
+
+Tail sampling is a technique for collecting metrics data from the slowest requests in a system. This can be useful for understanding the causes of tail latency and identifying performance bottlenecks.
+
+### Tail Latency
+
+Tail latency refers to the latency of the slowest requests in a system. Tail latency is an important metric to monitor, as it can have a significant impact on the user experience and overall system performance.
+
+### Telegraf
+
+[Telegraf](https://www.influxdata.com/time-series-platform/telegraf/) is a server-based agent for collecting and sending all metrics and events from various data sources. It provides plugins for input, process, aggregate and output functions of telemetry data.
 
 ## U
 

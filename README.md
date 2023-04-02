@@ -269,7 +269,7 @@ A service is a software component or system that provides a specific set of func
 
 ### Summary
 
-A summary is a statistical representation of a set of data that shows its distribution and summary statistics, such as mean and variance.
+A summary is a Prometheus metric type that can be used for that can be used to monitor latencies (or other distributions like request sizes). They are similar to Histograms. However, unlike histograms, they give you the exact quantile values instead of estimates. They work best when you need the same latency value, such as P99, and do not want to avoid going through the hassles of setting histogram buckets.
 
 ### Sidecar
 

@@ -306,7 +306,7 @@ Tail sampling is a technique for collecting metrics data from the slowest reques
 
 ### Tail Latency
 
-Tail latency refers to the latency of the slowest requests in a system. In SRE, tail latency is an important metric to monitor, as it can have a significant impact on the user experience and overall system performance.
+Tail latency refers to the latency of the slowest requests in a system. Tail latency is an important metric to monitor, as it can have a significant impact on the user experience and overall system performance.
 
 ### Telegraf
 

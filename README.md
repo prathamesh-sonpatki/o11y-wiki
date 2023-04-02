@@ -99,7 +99,7 @@ or decreasing.
 
 ### Gateway
 
-A gateway is a component that acts as an entry point for traffic from external sources into a system. In the context of SRE, gateways can be used to manage traffic routing, load balancing, and security.
+A gateway is a component that acts as an entry point for traffic from external sources into a system. In the context of observability, gateways can be used to manage traffic routing, load balancing, and security.
 
 ## H
 

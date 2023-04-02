@@ -173,7 +173,7 @@ Monitoring is collecting and analyzing data about a system from outside based on
 
 ### Observability
 
-Observability is the ability to understand the internal state of a system based on its external outputs. In SRE, observability is achieved through the collection and analysis of telemetry data, including metrics, logs, and traces.
+Observability is the ability to understand the internal state of a system based on its external outputs. Observability is achieved by collecting and analyzing telemetry data, including metrics, logs, and traces.
 
 ### o11y
 

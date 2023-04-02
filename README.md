@@ -221,7 +221,7 @@ Platform engineering is designing, implementing, and maintaining software platfo
 
 ### Runbook
 
-A runbook is a document that provides step-by-step instructions for executing routine tasks or procedures. Runbooks are used in SRE to standardize and automate common operational procedures.
+A runbook is a document that provides step-by-step instructions for executing routine tasks or procedures. Runbooks are used to standardize and automate standard operational procedures.
 
 ### RED
 

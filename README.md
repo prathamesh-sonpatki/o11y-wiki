@@ -185,7 +185,7 @@ instead. Like, a11y stands for accessibility.
 
 ### OpenMetrics
 
-OpenMetrics is a standard for collecting and transmitting metrics data, developed by Prometheus and other contributors. It provides a common format for metrics that can be used across multiple monitoring systems.
+[OpenMetrics](https://openmetrics.io/) is a standard aimed at evolving the Prometheus exposition format. It supports text representation and Protocol Buffers and brings it into an Internet Engineering Task Force (IETF) standard. It supports both pull and push-based data collection.
 
 ### OpenCensus
 

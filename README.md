@@ -265,7 +265,14 @@ Sampling is the process of collecting a representative subset of data from a lar
 
 ### Service
 
-A service is a software component or system that provides a specific set of functions to other applications or users. In SRE, services are monitored and managed to ensure their reliability and availability.
+A [Service](https://last9.io/blog/services-not-server-observability/) is a software component or system providing specific functions to other applications or users. 
+A service can be
+- Combination of endpoints that fall under the purview of a payment team.
+- A piece of code catering to the Reconciliation workflow.
+- A demographic-based Personal Information Collector.
+- A data warehouse catering to the API and Billing teams.
+
+Or A combination of all of the above.
 
 ### Summary
 

@@ -165,7 +165,7 @@ MTTR (Mean Time to Recover/Resolve) is the average time to recover or resolve an
 
 ### Monitoring 
 
-Monitoring is the process of collecting and analyzing data about a system to ensure its reliability, availability, and performance. In SRE, monitoring is a critical activity that helps to detect and resolve issues before they impact users.
+Monitoring is collecting and analyzing data about a system from outside based on the data that the system outputs. In observability terminology, monitoring is sometimes also restricted to metrics management.
 
 ## N
 

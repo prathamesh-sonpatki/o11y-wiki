@@ -56,11 +56,6 @@ CI (Continuous Integration) integrates code changes into a common branch of a sh
 
 CD (Continuous Delivery) is the practice of delivering code changes to production frequently and reliably. An example would be using GitHub Actions to run tests via CI, prepare a docker image for the app once the tests pass, and then trigger the deployment via CD.
 
-### CDN
-
-A CDN (Content Delivery Network) is a network of servers that stores and distributes content to clients. 
-These servers are typically located in data centres, and they can be used to improve performance by reducing latency, ensuring that the content is available at the right time, and ensuring that the content is delivered in a timely manner.
-
 ## D
 
 ### Data lake
@@ -402,17 +397,6 @@ Check https://www.brendangregg.com/usemethod.html for more details.
 
 
 ## V
-
-### Virtualization
-
-Virtualization is the process of using one physical system to run multiple virtual machines. It is commonly used by companies that want to consolidate computing resources and keep them running 24/7 without having to buy more hardware. 
-Virtualization can be used for testing purposes, such as for software development or system performance testing.  Virtualization can also be used to create hybrid environments where physical servers are augmented by cloud-based services.
-
-There are many different types of virtualization technology available today, including:
-
-VMware - This is one of the most popular virtualization technologies available today. It runs on almost any platform and is easy to install and manage. It’s also very cost-effective because it leverages a lot of existing hardware and software infrastructure already in place.
-Windows Server - Windows Server is a common choice for virtualizing Microsoft applications because it has built-in support for Hyper-V, making it easy to deploy and manage. There are also several third-party solutions available to further augment administrator capabilities.
-Hyper-V - This is another option that’s popular with organizations looking to virtualize their servers. While it’s not as widely used as Hyper-V, it’s still an option that’s worth exploring if you’re looking for a low-cost way to virtualize. It’s one of the newer options available, so it might not be as widely accepted as the others but it’s still a valid option.
 
 
 ## W

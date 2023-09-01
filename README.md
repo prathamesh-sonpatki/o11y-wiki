@@ -11,6 +11,10 @@ The below document contains all the terms sorted alphabetically with their defin
 
 ## A
 
+### Active Time Series
+Active Time Series is relevant in the case of Time Series databases as it often decides billing. A time series is considered active if the TSDB scraped new data for it recently. Prometheus provides `prometheus_tsdb_head_series` metric, which shows the number of active time series. What is *recent* is mostly decided by the TSDB but we can consider 30 minutes as the window for active time series calculation.
+
+
 ### Alert
 
 An alert is a trigger that a specific change in a system's health has occurred, which indicates potential issues.
@@ -20,7 +24,7 @@ An alert will result in a notification to the system operators so that they can 
 
 APM, or Application Performance monitoring, is a software tool that measures and
 tracks an application's performance. It helps understand answers related to how the
-application is performing in real-time.
+application is performing in real time.
 
 ### Alertmanager
 
@@ -46,11 +50,11 @@ computation and memory overhead.
 
 As the name says, counters monitor how frequently an event occurs within a program.
 They help monitor metrics that increase monotonically and are exposed as time series.
-For example, total requests to an API endpoint are a counter metric that keeps increasing over time.
+For example, total requests to an API endpoint are a counter metric increasing over time.
 
 ### CI
 
-CI (Continuous Integration) integrates code changes into a common branch of a shared repository and runs automated tests against it every time the changes are merged, or a commit is made. It allows for detecting issues in the code faster because it is tested continuously, as the name says.
+CI (Continuous Integration) integrates code changes into a common branch of a shared repository and runs automated tests against it every time the changes are merged or a commit is made. It allows for detecting issues in the code faster because it is tested continuously, as the name says.
 
 ### CD
 
@@ -72,6 +76,9 @@ DevOps is a set of practices that combines software development and operations t
 
 Downsampling reduces the data points in a time series to make it more manageable without losing the essence. It can reduce the cost of storage and the performance of querying.
 
+### DPM(Data Points Per Minute)
+
+Data Point is a unique metric occurrence with a timestamp, value, and labels. The Timestamp and value are unique, as labels can also be common at other timestamps. The Data Point is also known as [sample](#/?id=samples). Data Points Per Minute is the rate of Data Points sent to a TSDB. A DPM of 1 is considered as standard. You can lower it to ship more samples as needed.
 ## E
 
 ### Event
@@ -416,7 +423,7 @@ Check https://www.brendangregg.com/usemethod.html for more details.
 
 2. What is considered part of the Observability Glossary?
 
-   - Any term or concept related to Observability.
+   - Any term or concept related to Observability, Reliability, and Monitoring of Software Systems.
 
 ---
 

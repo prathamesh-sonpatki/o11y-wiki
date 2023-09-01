@@ -11,6 +11,10 @@ The below document contains all the terms sorted alphabetically with their defin
 
 ## A
 
+### Active Time Series
+Active Time Series is relevant in the case of Time Series databases as it often decides billing. A time series is considered active if the TSDB scraped new data for it recently. Prometheus provides `prometheus_tsdb_head_series` metric, which shows the number of active time series. What is *recent* is mostly decided by the TSDB but we can consider 30 minutes as the window for active time series calculation.
+
+
 ### Alert
 
 An alert is a trigger that a specific change in a system's health has occurred, which indicates potential issues.
@@ -20,7 +24,7 @@ An alert will result in a notification to the system operators so that they can 
 
 APM, or Application Performance monitoring, is a software tool that measures and
 tracks an application's performance. It helps understand answers related to how the
-application is performing in real-time.
+application is performing in real time.
 
 ### Alertmanager
 

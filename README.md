@@ -85,6 +85,10 @@ Data Point is a unique metric occurrence with a timestamp, value, and labels. Th
 
 Events are hard to define because everything is an event, but let us give it a try 😉. An event is primarily a change event that can mean a pod restart, deployment, or configuration flag change. Events are important because they affect the system's state externally and can help correlate incidents with metrics, traces, and logs.
 
+### Error budget
+
+An error budget is a predefined allowance or limit for acceptable errors or failures within a system or process. It represents the tolerance for mistakes, bugs, or downtime that can occur before the user experience or overall system reliability is compromised. The error budget provides a clear, objective metric that determines how unreliable the service is allowed to be within a single quarter. This metric removes the politics from negotiations between the SREs and the product developers when deciding how much risk to allow.
+
 ### Exporter
 
 An exporter is a component that collects and transforms metrics data from a specific system or format into a standardized format that can be consumed by monitoring systems. Examples of exporters include Prometheus exporters and OpenTelemetry exporters.

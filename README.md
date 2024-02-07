@@ -286,7 +286,7 @@ RCA can find one or more root causes underlying a problem needing to be addresse
 
 ### RUM
 
-Real User Monitoring (RUM) is the process of collecting data about how real users behave with the system, and it is usually done by mimicking an end user. RUM gives insights to the issues that an actual user would face while using the application/system.
+Real User Monitoring (RUM) collects data about how real users interact with the system by mimicking an end user. RUM gives insights into a user's issues while using the application or system.
 
 ## S
 

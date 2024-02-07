@@ -284,6 +284,10 @@ A focus on recovery typically leads to a well founded understanding of both desi
 Root cause analysis (RCA) is the process of finding and analyzing the causes of a problem or an event impacting the value delivery of an application or an organization. 
 RCA can find one or more root causes underlying a problem needing to be addressed to solve and prevent the problem from recurring.
 
+### RUM
+
+Real User Monitoring (RUM) is the process of collecting data about how real users behave with the system, and it is usually done by mimicking an end user. RUM gives insights to the issues that an actual user would face while using the application/system.
+
 ## S
 
 ### Span
